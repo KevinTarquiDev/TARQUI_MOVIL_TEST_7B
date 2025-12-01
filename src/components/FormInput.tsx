@@ -8,7 +8,7 @@ type FormInputProps = TextInputProps & {
   typeInput?: 'string' | 'integer';
 };
 
-const FormInput = ({
+export const FormInput = ({
   label,
   required,
   smsError,
@@ -72,5 +72,3 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
 });
-
-export default FormInput;

@@ -5,7 +5,7 @@ type FormButtonProps = TouchableOpacityProps & {
   label: string;
 };
 
-const FormButton = ({ label, style, ...props }: FormButtonProps) => {
+export const FormButton = ({ label, style, ...props }: FormButtonProps) => {
   return (
     <TouchableOpacity {...props} style={[styles.button, style]} activeOpacity={0.85}>
       <Text style={styles.text}>{label}</Text>
@@ -28,5 +28,3 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
-
-export default FormButton;
